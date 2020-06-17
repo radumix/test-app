@@ -4,5 +4,7 @@ Built in ionic capacitor.
 Multiple router outlets.
 Lazyloading approach.
 
-version 1.0.0
+apk file.
+app-debug.apk.
+version 1.0.0.
 
