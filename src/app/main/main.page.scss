@@ -1,0 +1,39 @@
+.ion-no-border{
+    text-align: center;
+    height: 200px;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background-image: url('../../assets/img/bubble.gif');
+  }
+  
+  .badge{
+    position: absolute; right: 0; top:0; margin-right: 10px; margin-top: 5px;
+  }
+  
+  
+  .img-circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    top: 0;
+    margin-top: 50px;
+    z-index: 9999;
+  
+  }
+  
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    }
+  
+    h1{
+      color:#f4f5f8;
+      margin-top: 25px;
+      font-family: 'sans-serif';
+    }
+  
+   

@@ -1,0 +1,7 @@
+{
+  "name": "escalationApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

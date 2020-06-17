@@ -1,0 +1,45 @@
+<ion-app>
+  <ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar>
+
+      <ion-buttons (click)="redirectPage('main/dashboard')" slot="start">
+        <ion-button>
+          <ion-icon color="light" slot="icon-only" name="reorder-two-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+  
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon slot="icon-only" color="light" name="notifications-outline"></ion-icon>
+        </ion-button>
+        <ion-badge class="badge" color="light">1</ion-badge>
+      </ion-buttons>
+      
+    </ion-toolbar>
+
+    <img class="img-circle" src="../../assets/img/pf.jpg">
+
+    <h1>Bob Marley</h1>
+  
+    <ion-segment color="light">
+      <ion-segment-button value="manage">
+        <ion-label class="ion-text-wrap">Manage ILAS Funds</ion-label>
+        <ion-icon name="cash-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="claims">
+        <ion-label class="ion-text-wrap">Claims</ion-label>
+        <ion-icon name="reader-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button (click)="redirectPage('main/policy-servicing')" value="servicing">
+        <ion-label class="ion-text-wrap">Policy Servicing</ion-label>
+        <ion-icon name="layers-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-content>
+</ion-app>

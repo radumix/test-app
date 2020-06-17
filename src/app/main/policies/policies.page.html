@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>All Policies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of data; let i = index">
+    <ion-grid>
+      <ion-row>
+        <span class="header">{{item.header}}</span>
+      </ion-row>
+      <ion-row>
+        <div class="sub-header-wrapper">
+          <img class="img" src="../../../assets/img/rightArrow.png">
+          <span class="sub-header">Policy No: {{item.policyNumber}}</span>
+          <span class="sub-header">Status: {{item.status}}</span>
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="detail" *ngFor="let detail of data[i].detail">
+          <span class="title">{{detail.title}}</span>
+          <span class="value">{{detail.value}}</span>
+        </div>
+      </ion-row>
+    </ion-grid>
+    <div *ngIf="item.message!=''" class="message">
+      <div class="mark">!</div>
+      <span>{{item.message}}</span>
+    </div>
+  </ion-card>
+  <div class="nothing-follows">
+    <span class="text">*excluding pending fun transaction</span>
+  </div>
+</ion-content>
